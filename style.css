@@ -1,0 +1,64 @@
+:root {
+    --color-neutral: #888888;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+html {
+  /* So you will be able to use 1rem as 10px in whole document for any element*/
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: "Times new Roman", serif;
+
+    font-size: 1.6rem;
+}
+
+h1, h2 {
+    backdrop-filter: grayscale(0.2) blur(10px);
+}
+
+h1 {
+    font-size: 5rem;
+    text-decoration: underline;
+    font-weight: 300;
+}
+
+
+
+header {
+    padding: 10rem 10rem;
+    background-image: url('/banner.jpg');
+    background-size: cover;
+    background-position: center;
+
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header > *:not(:last-child) {
+    margin-right: 5rem;
+}
+
+
+section {
+    width: 100%;
+}
+
+section.crop {
+    padding: 5rem;
+}
+
